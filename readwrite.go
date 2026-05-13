@@ -46,6 +46,7 @@ func (receiver ReadWriterHandler) ServeHTTP(responseWriter http.ResponseWriter, 
 			http.MethodDelete,
 			http.MethodGet,
 			http.MethodHead,
+			methodList,
 			http.MethodPut,
 		)
 		return
