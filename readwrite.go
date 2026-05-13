@@ -44,6 +44,9 @@ func (receiver ReadWriterHandler) ServeHTTP(responseWriter http.ResponseWriter, 
 	case http.MethodPut:
 		serveHTTPPut(responseWriter, request, receiver.RootDir, receiver.AuthorizerFunc, receiver.HTTPBodyReadSizeLimit, receiver.HTTPBodyReadTimeOut)
 		return
+	case methodReplace:
+		serveHTTPReplace(responseWriter, request, receiver.RootDir, receiver.AuthorizerFunc, receiver.HTTPBodyReadSizeLimit, receiver.HTTPBodyReadTimeOut)
+		return
 	default:
 		http405.MethodNotAllowed(responseWriter, request,
 			methodCreate,
@@ -52,6 +55,7 @@ func (receiver ReadWriterHandler) ServeHTTP(responseWriter http.ResponseWriter, 
 			http.MethodHead,
 			methodList,
 			http.MethodPut,
+			methodReplace,
 		)
 		return
 	}
