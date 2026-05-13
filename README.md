@@ -22,6 +22,19 @@ To install package **httpfs** do the following:
 GOPROXY=direct go get github.com/reiver/go-httpfs
 ```
 
+## HTTP Methods
+
+The methods that are supported are:
+
+* `APPEND`
+* `CREATE`
+* `DELETE`
+* `GET`
+* `HEAD`
+* `LIST`
+* `PUT`
+* `REPLACE`
+
 ## Author
 
 Package **httpfs** was written by [Charles Iliya Krempeaux](http://reiver.link)
