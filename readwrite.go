@@ -35,6 +35,9 @@ func (receiver ReadWriterHandler) ServeHTTP(responseWriter http.ResponseWriter, 
 	case http.MethodHead:
 		serveHTTPHead(responseWriter, request, receiver.RootDir)
 		return
+	case methodList:
+		serveHTTPList(responseWriter, request, receiver.RootDir)
+		return
 	case http.MethodPut:
 		serveHTTPPut(responseWriter, request, receiver.RootDir, receiver.AuthorizerFunc, receiver.HTTPBodyReadSizeLimit, receiver.HTTPBodyReadTimeOut)
 		return
