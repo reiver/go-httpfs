@@ -18,6 +18,8 @@ github.com/reiver/go-http404 v0.0.0-20260303090244-0bf7e6f73f9f h1:vX9E4EEW0uiQQ
 github.com/reiver/go-http404 v0.0.0-20260303090244-0bf7e6f73f9f/go.mod h1:H6Q0pQqL16BgZfROmVfcpQ0jZNacKv1SqS4BqTkQbg8=
 github.com/reiver/go-http405 v0.0.0-20260513003826-b310b5f47814 h1:BczQLu2otL062q/jxD0ce6dAdhP3NIKEPgyhT8lxLf0=
 github.com/reiver/go-http405 v0.0.0-20260513003826-b310b5f47814/go.mod h1:crm7Z30/zvkkTD/SJsObsd5fDj87oBa/vQLB4+QhjKM=
+github.com/reiver/go-http409 v0.0.0-20260511195732-7cbb9823bb82 h1:S7NAmrIM0JnKVMZs9ZiuP5rGbehKZaqedTGuWV0X+qI=
+github.com/reiver/go-http409 v0.0.0-20260511195732-7cbb9823bb82/go.mod h1:2obNlcivO69lV1AGACzNhiLE2Auy0OcIuOD/Dep/ZNE=
 github.com/reiver/go-http500 v0.0.0-20260513003738-a9607b7c87c5 h1:ffU1e4Mn34n4eBqyFpSIVVtnkEc9osOfcHRNEA5SvzI=
 github.com/reiver/go-http500 v0.0.0-20260513003738-a9607b7c87c5/go.mod h1:RgzKSX6lXTWeMJ1JQD2XgZZQV66/K1wSFkyXIrx1Do8=
 github.com/reiver/go-path v0.0.0-20240327181650-5f2ee05890d8 h1:8JFCnRV4GVjP8XUFuXvCH42o4fXHSkGcUkfsloB+LeY=

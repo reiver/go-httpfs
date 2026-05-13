@@ -26,6 +26,9 @@ func (receiver ReadWriterHandler) ServeHTTP(responseWriter http.ResponseWriter, 
 	}
 
 	switch strings.ToUpper(request.Method) {
+	case methodCreate:
+		serveHTTPCreate(responseWriter, request, receiver.RootDir, receiver.AuthorizerFunc, receiver.HTTPBodyReadSizeLimit, receiver.HTTPBodyReadTimeOut)
+		return
 	case http.MethodDelete:
 		serveHTTPDelete(responseWriter, request, receiver.RootDir, receiver.AuthorizerFunc)
 		return
@@ -43,6 +46,7 @@ func (receiver ReadWriterHandler) ServeHTTP(responseWriter http.ResponseWriter, 
 		return
 	default:
 		http405.MethodNotAllowed(responseWriter, request,
+			methodCreate,
 			http.MethodDelete,
 			http.MethodGet,
 			http.MethodHead,

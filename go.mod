@@ -10,6 +10,7 @@ require (
 	github.com/reiver/go-http403 v0.0.0-20260513051418-9cc60a866170
 	github.com/reiver/go-http404 v0.0.0-20260303090244-0bf7e6f73f9f
 	github.com/reiver/go-http405 v0.0.0-20260513003826-b310b5f47814
+	github.com/reiver/go-http409 v0.0.0-20260511195732-7cbb9823bb82
 	github.com/reiver/go-http500 v0.0.0-20260513003738-a9607b7c87c5
 	github.com/reiver/go-path v0.0.0-20240327181650-5f2ee05890d8
 )
